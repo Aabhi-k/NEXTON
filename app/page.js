@@ -1,7 +1,11 @@
+import Hero from './components/Hero';
+
 export default function HomePage() {
   return (
-    <main className="p-4">
-      <h1 className="text-2xl font-bold">Welcome to Home Page</h1>
+    <main>
+      <Hero />
+      <div className="container mx-auto p-4 mt-20">
+      </div>
     </main>
   );
 }
