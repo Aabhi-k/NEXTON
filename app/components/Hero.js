@@ -21,9 +21,9 @@ export default function Hero() {
         </div>
         <div className="relative z-10 container p-50  h-full flex items-center">
           <div className="max-w-xl lg:max-w-3xl">
-            <p className="text-gray-700 lg:text-[20px] mb-2">Starting from: $49.99</p>
+            <p className="text-gray-700 text-[20px] mb-2">Starting from: $49.99</p>
             
-            <h1 className="text-6xl lg:text-[64px] font-bold text-[#111827] mb-6 leading-tight">
+            <h1 className="text-[64px] font-bold text-[#111827] mb-6 leading-tight">
               Exclusive collection for everyone
             </h1>
             
