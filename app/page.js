@@ -1,3 +1,4 @@
+import Banner from './components/Banner';
 import BestSellers from './components/BestSellers';
 import CategoryCards from './components/CategoryCards';
 import Hero from './components/Hero';
@@ -10,6 +11,7 @@ export default function HomePage() {
       <CategoryCards />
       <Recommendations />
       <BestSellers />
+      <Banner />
     </main>
   );
 }
