@@ -22,18 +22,18 @@ export default function Hero() {
         <div className="relative z-10 container p-50  h-full flex items-center">
           <div className="max-w-xl lg:max-w-3xl">
             <p className="text-gray-700 text-[20px] mb-2">Starting from: $49.99</p>
-            
+
             <h1 className="text-[64px] font-bold text-[#111827] mb-6 leading-tight">
               Exclusive collection for everyone
             </h1>
-            
+
             <Link href="/shop">
               <button className="bg-[#111827] text-white px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#1e293b] transition-colors">
                 Explore now
-                <Image 
-                  src="/search.svg" 
-                  alt="" 
-                  width={20} 
+                <Image
+                  src="/search.svg"
+                  alt=""
+                  width={20}
                   height={20}
                   className="brightness-0 invert"
                 />
@@ -50,14 +50,14 @@ export default function Hero() {
       </div>
 
       <div className="flex-1 flex items-center justify-center w-full bg-white">
-        <div className="container-fluid px-4 py-8 shadow-sm border-t border-gray-200 rounded-3xl "> 
+        <div className="container-fluid px-4 py-8 shadow-sm border-t border-gray-200 rounded-3xl ">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
+
             <div className="flex items-center gap-4 relative px-8 md:px-10">
               <div className="flex-shrink-0">
-                <Image 
-                  src="/brand-1.svg" 
-                  alt="Free shipping" 
+                <Image
+                  src="/brand-1.svg"
+                  alt="Free shipping"
                   width={40}
                   height={40}
                 />
@@ -70,12 +70,12 @@ export default function Hero() {
                 <div className="h-full w-px bg-gray-200"></div>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4 relative px-8 md:px-10">
               <div className="flex-shrink-0">
-                <Image 
-                  src="/brand-2.svg" 
-                  alt="Easy returns" 
+                <Image
+                  src="/brand-2.svg"
+                  alt="Easy returns"
                   width={40}
                   height={40}
                 />
@@ -88,12 +88,12 @@ export default function Hero() {
                 <div className="h-full w-px bg-gray-200"></div>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4 relative px-8 md:px-10">
               <div className="flex-shrink-0">
-                <Image 
-                  src="/brand-3.svg" 
-                  alt="Worldwide delivery" 
+                <Image
+                  src="/brand-3.svg"
+                  alt="Worldwide delivery"
                   width={40}
                   height={40}
                 />
@@ -106,12 +106,12 @@ export default function Hero() {
                 <div className="h-full w-px bg-gray-200"></div>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4 px-8 md:px-10">
               <div className="flex-shrink-0">
-                <Image 
-                  src="/brand-4.svg" 
-                  alt="Refunds policy" 
+                <Image
+                  src="/brand-4.svg"
+                  alt="Refunds policy"
                   width={40}
                   height={40}
                 />

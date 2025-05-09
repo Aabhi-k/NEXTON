@@ -12,11 +12,11 @@ export default function Navbar() {
       <div className="font-bold">
         <Link href="/" className="flex items-center">
           <div className="invert brightness-0">
-            <Image 
-              src="/logo.svg" 
-              alt="NEXTON eCommerce" 
-              width={120} 
-              height={40} 
+            <Image
+              src="/logo.svg"
+              alt="NEXTON eCommerce"
+              width={120}
+              height={40}
               priority
             />
           </div>
@@ -29,33 +29,33 @@ export default function Navbar() {
           placeholder="Search in products..."
           className="w-full px-4 py-2 pl-10 rounded-full text-black bg-white outline-none"
         />
-        <Image 
-            src="/search.svg" 
-            alt="search" 
-            width={28} 
-            height={28} 
-            className="absolute top-2.5 left-3 text-gray-500 w-5 h-5"
-          />
+        <Image
+          src="/search.svg"
+          alt="search"
+          width={28}
+          height={28}
+          className="absolute top-2.5 left-3 text-gray-500 w-5 h-5"
+        />
       </div>
 
       <div className="flex items-center space-x-6 text-xl text-gray-400">
         {/* User Icon */}
         <div>
-          <Image 
-            src="/user-btn.svg" 
-            alt="User Account" 
-            width={28} 
-            height={28} 
+          <Image
+            src="/user-btn.svg"
+            alt="User Account"
+            width={28}
+            height={28}
             className="text-gray-400"
           />
         </div>
-        
+
         {/* Cart Icon with Count */}
         <div className="relative">
-          <Image 
-            src="/cart.svg" 
-            alt="Shopping Cart" 
-            width={28} 
+          <Image
+            src="/cart.svg"
+            alt="Shopping Cart"
+            width={28}
             height={28}
             className="text-gray-400"
           />
