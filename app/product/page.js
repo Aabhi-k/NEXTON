@@ -12,10 +12,10 @@ export default function ProductPage() {
     reviews: 142,
     description: 'The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.',
     images: [
-      '/product/main-1.jpg',
-      '/product/main-2.jpg',
-      '/product/main-3.jpg',
-      '/product/main-4.jpg',
+      '/product/main-1.png',
+      '/product/main-2.png',
+      '/product/main-3.png',
+      '/product/main-4.png',
     ],
     sizes: ['S', 'M', 'L', 'XL', '2XL'],
     fabric: {
@@ -32,7 +32,7 @@ export default function ProductPage() {
   };
 
   return (
-    <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <main className="w-[95%] md:w-[90%] lg:w-[85%] mx-auto py-8 px-2 sm:px-4 lg:px-8">
       <ProductSection product={product} />
       <RecommendationSection />
     </main>

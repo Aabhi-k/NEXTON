@@ -9,8 +9,12 @@ export default function HomePage() {
     <main>
       <Hero />
       <CategoryCards />
-      <Recommendations />
-      <BestSellers />
+      <div className="flex justify-center w-full">
+        <Recommendations />
+      </div>
+      <div className="flex justify-center w-full">
+        <BestSellers />
+      </div>
       <div className="hidden md:block">
         <Banner />
       </div>

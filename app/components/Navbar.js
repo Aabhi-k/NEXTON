@@ -67,7 +67,6 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Search bar - Visible on both mobile and desktop */}
       <div className="flex-1 mx-4 md:mx-8 max-w-md relative">
         <div className="relative">
           <input
@@ -87,16 +86,18 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Hamburger menu on mobile (right side) */}
       {isMobile && (
         <button onClick={toggleMobileMenu} className="ml-2">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6H20M4 12H20M4 18H20" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-          </svg>
+          <Image
+            src="/mobile/hamburger-menu.svg"
+            alt="Menu"
+            width={28}
+            height={28}
+            className="text-gray-400"
+          />
         </button>
       )}
 
-      {/* Desktop navigation items */}
       {!isMobile && (
         <div className="flex items-center space-x-6">
           <div className="relative">
@@ -123,7 +124,6 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* Mobile menu overlay with backdrop */}
       {isMobile && mobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={toggleMobileMenu}>
           <div 

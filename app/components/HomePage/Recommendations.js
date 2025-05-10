@@ -13,7 +13,7 @@ export default function Recommendations() {
             rating: 4.9,
             reviews: 98,
             discount: 50,
-            slug: "black-automatic-watch-1",
+            slug: "",
             image: "/cards/1.png"
         },
         {
@@ -24,7 +24,7 @@ export default function Recommendations() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-2",
+            slug: "",
             image: "/cards/2.png"
         },
         {
@@ -35,7 +35,7 @@ export default function Recommendations() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-3",
+            slug: "",
             image: "/cards/3.png"
         },
         {
@@ -46,7 +46,7 @@ export default function Recommendations() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-4",
+            slug: "",
             image: "/cards/4.png"
         }
     ];

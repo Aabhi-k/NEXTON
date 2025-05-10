@@ -80,14 +80,14 @@ export default function CategoryCards() {
 
       <div
         ref={scrollContainerRef}
-        className="md:hidden flex overflow-x-auto snap-x snap-mandatory -mx-4 px-4 pb-4 scrollbar-none"
+        className="md:hidden flex overflow-x-auto snap-x snap-mandatory px-4 pb-4 scrollbar-none"
         onScroll={handleScroll}
         style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}
       >
         {categories.map((category, index) => (
           <div
             key={category.id}
-            className={`snap-center flex-shrink-0 w-full mr-4 rounded-2xl p-6 ${category.color} transition-transform border-2 border-black`}
+            className={`snap-center flex-shrink-0 w-full ${index < categories.length - 1 ? 'mr-4' : ''} rounded-2xl p-6 ${category.color} transition-transform border-2 border-black`}
           >
             <div className="flex justify-between items-center h-full">
               <div>

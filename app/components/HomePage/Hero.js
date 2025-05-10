@@ -29,15 +29,14 @@ export default function Hero() {
     }
   ];
 
-  // Check if we're on mobile
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkIfMobile();
     window.addEventListener('resize', checkIfMobile);
-    
+
     return () => {
       window.removeEventListener('resize', checkIfMobile);
     };
@@ -50,7 +49,6 @@ export default function Hero() {
   return (
     <div className="relative h-screen flex flex-col">
       <div className="relative h-[70vh] overflow-hidden">
-        {/* Desktop background (single image, no sliding) */}
         {!isMobile && (
           <div className="absolute inset-0">
             <Image
@@ -67,8 +65,7 @@ export default function Hero() {
             />
           </div>
         )}
-        
-        {/* Mobile background (sliding) */}
+
         {isMobile && (
           <div
             className="absolute inset-0 transition-transform duration-700 ease-in-out"
@@ -131,12 +128,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center justify-center w-full bg-white">
-        <div className="container-fluid px-4 py-6 md:py-8 shadow-sm border-t border-gray-200">
+      <div className="md:hidden flex-1 flex items-center justify-center w-full bg-white">
+        <div className="container-fluid px-4 py-6 shadow-sm border-t border-gray-200">
           <div className="max-w-[1400px] mx-auto">
-            <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Nexton® always with you</h2>
+            <h2 className="text-xl font-bold mb-4">Nexton® always with you</h2>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <div className="flex flex-col items-start gap-2">
                 <div className="flex-shrink-0 mb-1">
                   <Image
@@ -144,11 +141,11 @@ export default function Hero() {
                     alt="Free shipping"
                     width={24}
                     height={24}
-                    className="w-6 h-6 md:w-8 md:h-8"
+                    className="w-6 h-6"
                   />
                 </div>
-                <h3 className="font-semibold text-sm md:text-base">Free shipping</h3>
-                <p className="text-xs md:text-sm text-gray-500">On orders over $50.00</p>
+                <h3 className="font-semibold text-sm">Free shipping</h3>
+                <p className="text-xs text-gray-500">On orders over $50.00</p>
               </div>
 
               <div className="flex flex-col items-start gap-2">
@@ -158,11 +155,11 @@ export default function Hero() {
                     alt="Easy returns"
                     width={24}
                     height={24}
-                    className="w-6 h-6 md:w-8 md:h-8"
+                    className="w-6 h-6"
                   />
                 </div>
-                <h3 className="font-semibold text-sm md:text-base">Very easy to return</h3>
-                <p className="text-xs md:text-sm text-gray-500">Just phone number</p>
+                <h3 className="font-semibold text-sm">Very easy to return</h3>
+                <p className="text-xs text-gray-500">Just phone number</p>
               </div>
 
               <div className="flex flex-col items-start gap-2">
@@ -172,11 +169,11 @@ export default function Hero() {
                     alt="Worldwide delivery"
                     width={24}
                     height={24}
-                    className="w-6 h-6 md:w-8 md:h-8"
+                    className="w-6 h-6"
                   />
                 </div>
-                <h3 className="font-semibold text-sm md:text-base">Worldwide delivery</h3>
-                <p className="text-xs md:text-sm text-gray-500">Fast delivery worldwide</p>
+                <h3 className="font-semibold text-sm">Worldwide delivery</h3>
+                <p className="text-xs text-gray-500">Fast delivery worldwide</p>
               </div>
 
               <div className="flex flex-col items-start gap-2">
@@ -186,11 +183,79 @@ export default function Hero() {
                     alt="Refunds policy"
                     width={24}
                     height={24}
-                    className="w-6 h-6 md:w-8 md:h-8"
+                    className="w-6 h-6"
                   />
                 </div>
-                <h3 className="font-semibold text-sm md:text-base">Refunds policy</h3>
-                <p className="text-xs md:text-sm text-gray-500">60 days return for any reason</p>
+                <h3 className="font-semibold text-sm">Refunds policy</h3>
+                <p className="text-xs text-gray-500">60 days return for any reason</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden md:flex flex-1 items-center justify-center w-full bg-white">
+        <div className="container-fluid px-4 py-8 max-w-[1400px]">
+          <div className="flex items-center justify-between gap-12 border border-gray-200 rounded-2xl py-6 px-10">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/brand-1.svg"
+                alt="Free shipping"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+              <div>
+                <h3 className="font-semibold text-base">Free shipping</h3>
+                <p className="text-sm text-gray-500">On orders over $50.00</p>
+              </div>
+            </div>
+
+            <div className="h-10 w-px bg-black"></div>
+
+            <div className="flex items-center gap-4">
+              <Image
+                src="/brand-2.svg"
+                alt="Very easy to return"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+              <div>
+                <h3 className="font-semibold text-base">Very easy to return</h3>
+                <p className="text-sm text-gray-500">Just phone number</p>
+              </div>
+            </div>
+
+            <div className="h-10 w-px bg-black"></div>
+
+            <div className="flex items-center gap-4">
+              <Image
+                src="/brand-3.svg"
+                alt="Worldwide delivery"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+              <div>
+                <h3 className="font-semibold text-base">Worldwide delivery</h3>
+                <p className="text-sm text-gray-500">Fast delivery worldwide</p>
+              </div>
+            </div>
+
+            <div className="h-10 w-px bg-black"></div>
+
+            <div className="flex items-center gap-4">
+              <Image
+                src="/brand-4.svg"
+                alt="Refunds policy"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
+              <div>
+                <h3 className="font-semibold text-base">Refunds policy</h3>
+                <p className="text-sm text-gray-500">60 days return for any reason</p>
               </div>
             </div>
           </div>

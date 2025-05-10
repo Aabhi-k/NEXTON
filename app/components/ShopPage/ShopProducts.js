@@ -113,7 +113,7 @@ export default function ShopProducts() {
                 {products.map((product) => (
                     <div key={product.id} className="bg-white overflow-hidden">
                         <div className="relative">
-                            <Link href={`/product/${product.slug}`}>
+                            <Link href={`/product`}>
                                 <div className="relative h-[450px] sm:h-[350px] md:h-[400px] w-full cursor-pointer">
                                     <Image
                                         src={product.image}
@@ -170,9 +170,12 @@ export default function ShopProducts() {
             <div className="mt-10 flex justify-center sm:justify-end">
                 <nav className="flex items-center space-x-2">
                     <button className="p-2 rounded-md text-gray-500 hover:bg-gray-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M15 18l-6-6 6-6" />
-                        </svg>
+                        <Image
+                            src="/prev-btn.svg"
+                            alt="Previous"
+                            width={30}
+                            height={26}
+                        />
                     </button>
                     <button className="w-8 h-8 flex items-center justify-center rounded-md bg-gray-100 text-black-200 font-medium text-sm">
                         1
@@ -190,9 +193,12 @@ export default function ShopProducts() {
                         5
                     </button>
                     <button className="p-2 rounded-md text-gray-500 hover:bg-gray-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>
+                        <Image
+                            src="/next-btn.svg"
+                            alt="Next"
+                            width={30}
+                            height={26}
+                        />
                     </button>
                 </nav>
             </div>
