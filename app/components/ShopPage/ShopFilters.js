@@ -286,28 +286,28 @@ export default function ShopFilters({ closeFilters, isMobile }) {
           ></div>
         </div>
 
-        <div className="flex items-center justify-between">
+               <div className="flex items-center justify-between">
           <div>
             <label className="block text-[16px] text-gray-500 mb-1">Min price</label>
-            <div className="relative flex items-center border border-gray-300 rounded w-24">
+            <div className="relative flex items-center border border-gray-300 rounded-full w-24">
               <input
                 type="number"
                 value={priceRange.min}
                 onChange={handleMinPriceChange}
-                className="w-full py-1 px-2 rounded text-sm focus:outline-none"
+                className="w-full py-1 px-2 rounded text-sm focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
               />
               <span className="absolute right-2 text-gray-400">$</span>
             </div>
           </div>
-
+        
           <div>
             <label className="block text-[16px] text-gray-500 mb-1">Max price</label>
-            <div className="relative flex items-center border border-gray-300 rounded w-24">
+            <div className="relative flex items-center border border-gray-300 rounded-full w-24">
               <input
                 type="number"
                 value={priceRange.max}
                 onChange={handleMaxPriceChange}
-                className="w-full py-1 px-2 rounded text-sm focus:outline-none"
+                className="w-full py-1 px-2 rounded text-sm focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
               />
               <span className="absolute right-2 text-gray-400">$</span>
             </div>

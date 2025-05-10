@@ -12,7 +12,7 @@ export default function BestSellers() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-bs1",
+            slug: "",
             image: "/cards/bs1.png"
         },
         {
@@ -23,7 +23,7 @@ export default function BestSellers() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-bs2",
+            slug: "",
             image: "/cards/bs2.png"
         },
         {
@@ -34,7 +34,7 @@ export default function BestSellers() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-bs3",
+            slug: "",
             image: "/cards/bs3.png"
         },
         {
@@ -45,7 +45,7 @@ export default function BestSellers() {
             category: "Accessories",
             rating: 4.9,
             reviews: 98,
-            slug: "black-automatic-watch-bs4",
+            slug: "",
             image: "/cards/bs4.png"
         }
     ];
