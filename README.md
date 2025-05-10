@@ -16,7 +16,7 @@ A modern, responsive e-commerce frontend built with Next.js and Tailwind CSS.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/nexton.git
+git clone https://github.com/aabhi-k/nexton.git
 cd nexton
 ```
 
