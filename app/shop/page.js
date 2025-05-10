@@ -1,8 +1,10 @@
+import ShopLayout from '../components/ShopPage/ShopLayout';
+
+export const metadata = {
+  title: 'Shop | Nexton',
+  description: 'Browse our collection of products',
+};
+
 export default function ShopPage() {
-    return (
-      <main className="p-4">
-        <h1 className="text-2xl font-bold">Shop Page</h1>
-      </main>
-    );
-  }
-  
+  return <ShopLayout />;
+}

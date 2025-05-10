@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const slides = [
     {
@@ -28,6 +29,19 @@ export default function Hero() {
     }
   ];
 
+  // Check if we're on mobile
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
 
   const goToSlide = (index) => {
     setActiveSlide(index);
@@ -36,26 +50,47 @@ export default function Hero() {
   return (
     <div className="relative h-screen flex flex-col">
       <div className="relative h-[70vh] overflow-hidden">
-        <div
-          className="absolute inset-0 transition-transform duration-700 ease-in-out"
-          style={{
-            transform: `translateX(-${activeSlide * 33.33}%)`,
-            width: '300%',
-          }}
-        >
-          <Image
-            src="/hero-bg.png"
-            alt="Hero background"
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-            quality={100}
+        {/* Desktop background (single image, no sliding) */}
+        {!isMobile && (
+          <div className="absolute inset-0">
+            <Image
+              src="/hero-bg.png"
+              alt="Hero background"
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+              quality={100}
+              style={{
+                objectPosition: 'center right'
+              }}
+            />
+          </div>
+        )}
+        
+        {/* Mobile background (sliding) */}
+        {isMobile && (
+          <div
+            className="absolute inset-0 transition-transform duration-700 ease-in-out"
             style={{
-              objectPosition: 'center right'
+              transform: `translateX(-${activeSlide * 100}%)`,
+              width: '300%',
             }}
-          />
-        </div>
+          >
+            <Image
+              src="/hero-bg.png"
+              alt="Hero background"
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+              quality={100}
+              style={{
+                objectPosition: 'center right'
+              }}
+            />
+          </div>
+        )}
 
         <div className="relative z-10 container p-6 md:p-50 h-full flex items-center">
           <div className="max-w-xl lg:max-w-3xl">
